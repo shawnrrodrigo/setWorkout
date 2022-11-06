@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:setworkout/login.dart';
 import 'package:setworkout/menu.dart';
+import 'package:setworkout/schedule.dart';
 import 'package:setworkout/signup.dart';
 
 void main() {
@@ -20,10 +21,11 @@ class MyApp extends StatelessWidget {
           buttonColor: Color.fromRGBO(51, 53, 59, 1),
           shadowColor: Color.fromRGBO(217, 217, 217, 1)),
       routes: {
-        '/': (ctx) => MenuScreen(),
+        '/': (ctx) => ScheduleScreen(),
         LoginScreen.routeName: (ctx) => LoginScreen(),
         SignupScreen.routeName: (ctx) => SignupScreen(),
         MenuScreen.routeName: (ctx) => MenuScreen(),
+        ScheduleScreen.routeName: (ctx) => ScheduleScreen(),
       },
     );
   }
